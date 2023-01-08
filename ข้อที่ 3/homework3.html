@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework3 HTML and CSS webpage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        body{
+            margin: 0;
+            padding: 10;
+            font-family: sans-serif;
+            color: rgb(212, 196, 175);
+            background: linear-gradient(#141e30,#243b55);
+            
+        }
+        main{
+            height: 140vh;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top:10em;
+            margin-left: 6em;
+            margin-right: 5em;
+            margin-bottom: 0em;
+            justify-content: center;
+            
+        }
+        .text-box{
+            
+            margin: 0px 50px 0px 0px;
+            
+        }  
+        .text-box h1{
+            margin: 0px 0px 0px 0px ;
+            font-weight: 200px;
+            font-size: 70px;
+            color: #fff;
+            text-align: left;
+                        
+        }
+        .text-box p{
+            text-align: left;
+            font-size: 20px;
+            
+        }
+
+        .form-box{
+            width: 400px;
+            padding: 40px;
+            background: #243b55;
+            box-sizing: border-box;
+            box-shadow: 0 15px 20px #1b1c1d;
+            border-radius: 10px;
+            
+        
+            
+        }
+    
+
+        .form-box .input-box{
+            position: relative;
+        }
+
+        .form-box .input-box input{
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            margin-bottom: 30px;
+            border: none;
+            border-radius: 5px;
+            
+        }
+        
+        .form-box .input-box .login-box .bottom {
+            background: #03e9f4;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03e9f4,
+                        0 0 25px #03e9f4,
+                        0 0 50px #03e9f4,
+                        0 0 100px #03e9f4;
+            margin: 0px 0px 10px 0px; 
+            width: 80%; transform: translate(0%, 20%);
+
+            }
+            
+        .link-box{
+            width: 100%;
+            text-align: center;
+            margin: 30px 0px 30px 0;
+            padding-bottom: 20px;
+            background: transparent;
+            border: 10px;
+            
+            
+        }    
+        a {
+            color: rgb(224, 217, 217);
+            
+        }  
+        a:link{
+            text-decoration: none;
+
+        }  
+        a:hover{
+            text-decoration: underline;
+
+        } 
+        
+        .bottom{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            transform: translate(25%, 25%);
+            border-radius: 5px;
+            
+            }
+        
+        .footer-link span{
+            position: relative;
+            top:2em;
+            left: 2em;
+            
+            
+            
+
+        }
+        footer  {
+            height: 100%;
+            background:linear-gradient(#141e30,#243b55);
+            
+            
+            
+        
+        }
+        .footer-firstbox ,.footer-secondbox{
+            text-align: justify;
+            font-size: 13px;
+            margin-left: 5em;
+            margin-right: 5em;
+            margin-top: 0;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            
+            
+        }
+
+        .footer-secondbox , .input-bottom{
+            padding-top: 2em;
+            border-style: solid;
+            border-color: #fff;
+            border-width: 0.5px 0px 0px 0px;
+        }
+        @media (max-width: 900px){
+            .text-box h1{
+                text-align: center;
+            }
+            .text-box p{
+                text-align: center;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="text-box">
+            <h1>MeetME</h1>
+            <p>MeetME helps you connect and share with the people in your life.</p>
+        </div>
+        
+        <div >
+            <div class="form-box">
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" name="EmailOrPhonnumber" placeholder="Email adress or phone number">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="input-box">
+                        <div class="login-box">
+                            <a href="#" class="bottom">Log in</a>
+                            
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <a href="#" >Forgotten password ? </a>
+                    </div>
+                    <div class="input-bottom">
+                            <a href="#" class="bottom">Create New Account</a>
+                    </div>
+                </form>    
+            </div>
+            <div class="footer-link">
+                <span> <a href="#">Create a Page </a>for a celebrity, brand or business.</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-firstbox"> 
+            <a href="#">English (UK) </a> &emsp;<a href="#">ภาษาไทย </a>&emsp;<a href="#">日本語 </a>&emsp;<a href="#">中文(简体) </a>&emsp;<a href="#">Tiếng Việt </a>&emsp;<a href="#">Français (France) </a>&emsp;
+            <a href="#">Deutsch </a>&emsp;<a href="#">Русский </a>&emsp;<a href="#">Español </a>&emsp;<a href="#">Português (Brasil) </a>&emsp;<a href="#">Italiano </a>&emsp;
+        </div>
+        <div class="footer-secondbox"> 
+            <a href="#">Sign </a> &emsp;<a href="#">UpLog in</a>&emsp;<a href="#">Messenger </a>&emsp;<a href="#">Facebook Lite </a>&emsp;<a href="#">Watch</a>&emsp;<a href="#">Places</a>&emsp;
+            <a href="#">Games</a>&emsp;<a href="#">Marketplace</a>&emsp;<a href="#">Meta Pay</a>&emsp;<a href="#">Oculus</a>&emsp;<a href="#">Portal</a>&emsp;<a href="#">Instagram</a>&emsp;
+            <a href="#">Bulletin</a>&emsp;<a href="#">Fundraisers</a>&emsp;<a href="#">Services</a>&emsp;<a href="#">Voting Information Centre</a>&emsp;<a href="#">Privacy Policy</a>&emsp;<a>Privacy Centre</a>&emsp;
+            <a href="#">Groups</a>&emsp;<a href="#">About</a>&emsp;<a href="#">Create ad</a>&emsp;<a href="#">Create Page</a>&emsp;<a href="#">Developers</a>&emsp;<a href="#">Careers</a>&emsp;
+            <a href="#">Cookies</a>&emsp;<a href="#">AdChoices</a>&emsp;<a href="#">Terms</a>&emsp;<a href="#">Help</a>&emsp;<a href="#">Contact uploading and non-users</a>&emsp;
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

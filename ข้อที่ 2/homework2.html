@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework 2 css position lab</title>
+    <style>
+        body{padding: 0;margin: 0; height: 200vh;}
+        .big{width: 50%; height: 50%;}
+        .small{width: 25%; height: 25%;}
+        .inside{width: 10%; height: 10%;}
+        .absollute{position: absolute;}
+        .relative{position: relative;}
+        .fixedd{position: fixed;}
+        .top{top:0}
+        .left{left: 0}
+        .right{right: 0}
+        .bottom{ bottom: 0}
+        .center{ left: 50%; top: 50%; transform: translate(-50%, -50%);}
+        .red{ background-color: red;}
+        .green{background-color: green;}
+        .blue{ background-color: blue;}
+        .yellow{background-color: yellow;}
+        .pink{ background-color: deeppink;}
+        .white{background-color: white;}
+    </style>
+</head>
+<body>
+    <div class="absollute small red "></div>
+    <div class="absollute small green right  "></div>
+    <div class="absollute small blue bottom"></div>
+    <div class="absollute small yellow bottom right"></div>
+    
+    <div class="fixedd big center">
+        <div class="relative pink inside center "></div>
+    </div>
+    
+    <div class="fixedd big center ">
+        <div class=" red inside  "></div>
+    </div>
+
+    <div class="fixedd big center ">
+        <div class="absollute green inside right"></div>
+    </div>
+
+    <div class="fixedd big center ">
+        <div class="absollute blue inside bottom"></div>
+    </div>
+
+    <div class="fixedd big center ">
+        <div class="absollute blue inside bottom"></div>
+    </div>
+
+    <div class="fixedd big center ">
+        <div class="absollute yellow inside bottom right"></div>
+    </div>
+
+</body>
+</html>
